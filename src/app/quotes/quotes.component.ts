@@ -8,6 +8,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+  submitType: string = 'Save';
 
   constructor() { }
 

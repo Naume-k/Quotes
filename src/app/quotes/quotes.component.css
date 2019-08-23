@@ -1,3 +1,21 @@
-.form-btn{
-    margin-left: 40%;
+.container-fluid{
+    text-align: center;
   }
+  label{
+    width:170px;
+    display:inline-block;
+}
+ 
+textarea{
+    vertical-align:middle;
+}
+form {
+  background-color: lightgrey;
+  width: 50%;
+  padding: 50px;
+  margin-left: 250px;
+  box-shadow: black;
+  border: 1px solid;
+  box-shadow: 5px 10px 8px 1px #888888;
+  text-align: center;
+}

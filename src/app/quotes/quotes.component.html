@@ -1,19 +1,22 @@
 <div class="container-fluid">
   <br><br>
     <button (click)="onNew()" class="btn btn-info form-btn" id="form-btn">Create your quote</button>
-    <br><br><br>
-    <form>
+    <br><br>
+
+    <form >
+        <!-- (ngSubmit)="onSave()" *ngIf="showNew" id="quote-form" -->
+        <!-- <span (click)="onCancel()" class="del"><i class="fa fa-times-circle"></i></span> -->
     <div class="form-group ">
       <label for="text-input">Quote</label>
-      <textarea  placeholder="Write your quote here" rows="6" cols="50" name="text" id="text-input" required></textarea>
+      <textarea  placeholder="Write your quote here"  rows="6" cols="50" name="text" id="text-input" required></textarea>
     </div>
-    <br>
+    
     <div class="form-group">
       <label for="author-input">Author</label>
       <input class="form-control" type="text" size="50" name="author" id="author-input" placeholder="Quote Author" required>
     </div> 
-    <br><br>
-    <button type="submit" class="btn btn-primary">{{submitType}}</button>
+    
+    <button type="submit" class="btn btn-success">{{submitType}}</button>
   </form>
   
 </div>

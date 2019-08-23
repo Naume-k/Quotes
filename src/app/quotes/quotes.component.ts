@@ -9,6 +9,7 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   submitType: string = 'Save';
+  
 
   constructor() { }
 

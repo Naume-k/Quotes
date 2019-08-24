@@ -1,10 +1,10 @@
-export class Quote {
+export class quote {
     constructor(
-        public text: string,
+        public quote: string,
         public author: string,
-        public poster: string,
-        public posttime: Date,
-        public upvotes: number,
-        public downvotes: number
+        public writer: string,
+        // public posttime: Date,
+        // public upvotes: number,
+        // public downvotes: number
       ) {  }
 }

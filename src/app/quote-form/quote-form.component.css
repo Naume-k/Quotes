@@ -1,0 +1,21 @@
+h3{
+    margin-left: 14%;
+  }
+  label{
+    width:170px;
+    display:inline-block;
+}
+ 
+textarea{
+    vertical-align:middle;
+}
+form {
+  background-color: lightgrey;
+  width: 100%;
+  padding: 50px;
+  box-shadow: black;
+  border: 1px solid;
+  box-shadow: 5px 10px 8px 1px #888888;
+  text-align: center;
+  /* display: none; */ 
+}

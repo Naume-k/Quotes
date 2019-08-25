@@ -45,5 +45,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Contact details
 Feel free to contact me on my email at kobnaome@gmail.com in case you need my help 
 
+## link to the live site
+https://Naume-k.github.io/Quotes/"
+
 ## Copy-right
 © 2019 Kobusingye Naume

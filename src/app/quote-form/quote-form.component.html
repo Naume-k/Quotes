@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <br><br>
   <h3>CREATE YOUR QUOTE</h3>
-    <br><br>
+  <br><br>
 
   <div >
     <form (ngSubmit)="submitQuote()" #quoteForm='ngForm' >
@@ -26,10 +26,8 @@
         <label for="date">Submitted Date</label>
         <input type="date" class="form-control" id="date" [(ngModel)]="newQuote.completeDate" name="date" #date='ngModel'
             required>
-        <!-- <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
-            <p>Select submitted date</p>
-        </div> -->
-    </div>
+        
+      </div>
       
       <button  class="btn btn-info form-btn" id="form-btn">Post your quote</button>
     </form>

@@ -2,9 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
 
+## Description
+
+Quotes is site where you can go and post your favourite quotes, like, dislike and delete quotes.
+
 ## Author
 
 Kobusingye Naume
+
+## Known bugs
+
+* you can add an empty quote
+* quote with the highest likes doesn't highlight
+
+## Technologies used
+I used html, css,bootsrap,typescript, and Angular.
 
 ## Development server
 
@@ -29,6 +41,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Contact details
+Feel free to contact me on my email at kobnaome@gmail.com in case you need my help 
 
 ## Copy-right
 © 2019 Kobusingye Naume

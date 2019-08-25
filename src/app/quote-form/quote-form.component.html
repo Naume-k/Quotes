@@ -6,7 +6,7 @@
   <div >
     <form (ngSubmit)="submitQuote()" #quoteForm='ngForm' >
         <!-- (ngSubmit)="onSave()" *ngIf="showNew" id="quote-form" -->
-      <span (click)="onCancel()" class="del"><i class="fa fa-times-circle"></i></span>
+      <!-- <span (click)="onCancel()" class="del"><i class="fa fa-times-circle"></i></span> -->
       <div class="form-group ">
         <label for="text-input">Quote</label>
         <textarea  placeholder="Write your quote here" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' rows="6" cols="50"  id="text-input" required></textarea>

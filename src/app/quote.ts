@@ -9,8 +9,7 @@ export class quote {
         public author: string,
         public writer: string,
         public description: string,
-        public completeDate: Date,
-        
+        public completeDate: Date, 
       ) { 
         this.showquote=false;
         this.upvotes=0;

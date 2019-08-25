@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input , HostListener } from '@angular/core';
+import { Directive, ElementRef } from '@angular/core';
 import {quote} from './quote';
 
 @Directive({
@@ -6,6 +6,8 @@ import {quote} from './quote';
 })
 export class HighlightDirective {
 
-  @Input() quot:quote;
+  constructor(public elem:ElementRef) {
+    this.elem.nativeElement.style.backgroundColor="lightpink";
+   }
 
 }

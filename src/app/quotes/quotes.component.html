@@ -10,7 +10,11 @@
                 <p appHighlight>Quote: {{quote.quote}}</p>
                 <p>Author: {{quote.author}}</p>
                 <p>Publisher: {{quote.writer}}</p>
+                
+                <p id="{{i}}">Posted on {{quote.completeDate|date|uppercase}}</p>
+
                 <button class="btn btn-info form-btn" (click)= 'deleteQuote(true, i)'>Delete Quote</button><br><br>
+
                 <!-- <button class="btn btn-info form-btn" (click)= 'toggleDetails'>Details</button><br><br> -->
                 <p>{{upvote}}</p>
                 <button (click)= 'quoteupvote()'class="btn btn-info form-btn" style="margin-right:2%" >Like</button><br><br>

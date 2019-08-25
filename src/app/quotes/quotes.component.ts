@@ -31,6 +31,7 @@ quotedownvote(){
   this.downvote++;
 }
 
+
 deleteQuote(isDelete, index){
   if (isDelete) {
     let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`);

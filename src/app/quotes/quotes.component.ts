@@ -13,13 +13,26 @@ quotes:quote[]=[];
 addNewQuote(quote){
   let quoteLength = this.quotes.length;
   quote.id = quoteLength+1;
-  // quote.completeDate = new Date(quote.completeDate)
+  quote.completeDate = new Date(quote.completeDate)
   this.quotes.push(quote)
 
 }
 
-deleteQuote(isComplete, index){
-  if (isComplete) {
+// toggleDetails(index){
+//   this.quotes[index].showDescription=!this.quotes[index].showDescription;
+// }
+
+upvote=0;
+downvote=0;
+quoteupvote(){
+  this.upvote++;
+}
+quotedownvote(){
+  this.downvote++;
+}
+
+deleteQuote(isDelete, index){
+  if (isDelete) {
     let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`);
 
     if (toDelete){

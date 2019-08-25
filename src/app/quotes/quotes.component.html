@@ -1,13 +1,25 @@
-<div class="col-md-6">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+<div class="container">
+    <div class="row">
+
+            <div class="col-md-8">
+                    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+            </div>
+                
+            <div class="col-md-4" *ngFor='let quote of quotes let i="index"'>
+                <br><br><br><br><br><br>
+                <p appHighlight>Quote: {{quote.quote}}</p>
+                <p>Author: {{quote.author}}</p>
+                <p>Publisher: {{quote.writer}}</p>
+                <button class="btn btn-info form-btn" (click)= 'deleteQuote(true, i)'>Delete Quote</button><br><br>
+                <!-- <button class="btn btn-info form-btn" (click)= 'toggleDetails'>Details</button><br><br> -->
+                <p>{{upvote}}</p>
+                <button (click)= 'quoteupvote()'class="btn btn-info form-btn" style="margin-right:2%" >Like</button><br><br>
+                <p>{{downvote}}</p>
+                <button (click)= 'quotedownvote()' class="btn btn-info form-btn" style="margin-right:2%">Dislike</button>
+
+                </div>
+                <app-quote-details *ngIf [quot]='quote' ></app-quote-details>
+    </div>
 </div>
 
-<div  *ngFor='let quote of quotes'>
-    <p>{{quote.quote}}</p>
-    <p>{{quote.author}}</p>
-    <p>{{quote.writer}}</p>
-    
-    <button (click)= 'deleteQuote($event,i)'>Delete Quote</button>
-</div>
-<app-quote-details *ngIf [quot]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
 
